@@ -1,8 +1,13 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import AppNotes from './pages/AppNotes';
+
 const App = () => {
   return (
-    <div className="App">
-
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<AppNotes />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
