@@ -1,0 +1,37 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw;
+
+    @include app-component;
+
+    h2 {
+        display: flex;
+        align-items: center;
+
+        font-size: 1.3vw;
+    }
+
+    .search-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 15vw;
+        height: 2vw;
+        padding: .5vw;
+
+        background-color: $gray-color;
+
+        input {
+            width: 12vw;
+            height: 2vw;
+            border: none;
+        }
+    
+        svg {
+            width: 1.25vw;
+            height: 1.25vw;
+        }
+    }
+}

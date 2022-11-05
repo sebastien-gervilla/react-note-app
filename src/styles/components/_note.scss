@@ -1,0 +1,74 @@
+.note {
+    width: 12.5vw;
+    height: 12.5vw;
+    padding: 1vw;
+    margin: 1vw;
+
+    background-color: $main-color;
+
+    input, textarea, p {
+        width: 100%;
+        padding: .25vw;
+
+        color: $light-color;
+        background-color: transparent;
+    }
+
+    input, textarea {
+        outline: none;
+        border: none;
+        resize: none;
+        background-color: $darker-main-color;
+        caret-color: $light-color;
+
+        font-family: unset;
+
+        &::placeholder {
+            color: $light-color;
+        }
+    }
+
+    .title {
+        height: 15%;
+        margin-bottom: 1vw;
+    }
+
+    .text {
+        height: 55%;
+        margin-bottom: 1vw;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 10%;
+
+        .buttons {
+            display: flex;
+
+            button {
+                svg {
+                    width: 1vw;
+                    height: 1vw;
+                    margin-left: .3vw;
+        
+                    color: $light-color;
+        
+                    cursor: pointer;
+                    transition: .15s ease;
+        
+                    &:hover {
+                        transition: .15s ease;
+                    }
+                }
+    
+                &#add-btn:hover { svg { color: $add-color; } }
+                &#reset-btn:hover { svg{ color: $secondary-color; } }
+                &#edit-btn:hover { svg{ color: $add-color; } }
+                &#delete-btn:hover { svg{ color: $secondary-color; } }
+            }
+        }
+    }
+}

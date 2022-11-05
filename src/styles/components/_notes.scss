@@ -1,0 +1,7 @@
+.notes {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1vw;
+    
+    @include app-component;
+}
