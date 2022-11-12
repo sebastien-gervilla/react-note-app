@@ -1,0 +1,34 @@
+{
+    "notes": [
+        {
+            "id": "1",
+            "title": "First note",
+            "text": "This is a note",
+            "date": "14/11/2022"
+        },
+        {
+            "id": "1",
+            "title": "Second note",
+            "text": "This is a note",
+            "date": "16/12/2022"
+        },
+        {
+            "id": "1",
+            "title": "Third note",
+            "text": "This is a note",
+            "date": "30/12/2022"
+        },
+        {
+            "id": "1",
+            "title": "Fourth note",
+            "text": "This is a note",
+            "date": "23/02/2022"
+        },
+        {
+            "id": "1",
+            "title": "Last note",
+            "text": "This is a note",
+            "date": "11/11/2022"
+        }
+    ]
+}
