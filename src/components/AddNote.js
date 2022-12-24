@@ -1,12 +1,21 @@
 import React from 'react';
 import { useState } from 'react';
-import { IoIosAddCircleOutline } from 'react-icons/io'
+import { IoIosAddCircleOutline } from 'react-icons/io';
+import { nanoid } from 'nanoid';
+import { getCurrentDate } from '../utils/utils';
 
 const AddNote = ({ addNote }) => {
 
     const [note, setNote] = useState(defaultNote);
 
-    const handleAddNote = () => addNote(note);
+    const handleAddNote = () => {
+        addNote({
+            ...note,
+            id: nanoid(),
+            date: getCurrentDate()
+        });
+        setNote(defaultNote);
+    };
 
     const handleChangeNote = event => {
         const field = event.target.name;

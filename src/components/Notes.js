@@ -9,15 +9,15 @@ const Notes = () => {
 
     const addNote = (newNote) => setNotes([...notes, newNote]);
 
+    const editNote = (newNote) => setNotes(notes.map(note => note.id === newNote.id ? newNote : note));
+
     const deleteNote = (id) => setNotes(notes.filter(note => note.id !== id));
 
     const displayNotes = () => {
         return notes.map(note => <Note 
             key={note.id} 
-            id={note.id}
-            title={note.title} 
-            text={note.text}
-            date={note.date}
+            noteInfos={note}
+            editNote={editNote}
             deleteNote={deleteNote}
         />)
     }
